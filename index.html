@@ -1,11 +1,65 @@
 <!DOCTYPE html>
- <head>
-    <title>My First Web page</title>
- </head>
+<html>
+    <head>
+        <title>My First Web page</title>
+        <style>
+            header {
+                background: url(images/central_park.jpg) 0 -200px no-repeat;/*Place image as background*/
+                background-size: 1500px; /*Cover the entire header*/
+                /*background-position: 0 -200px; */
+                /*background-repeat: no-repeat; */
+                height: 400px;/* give height to header*/
+                padding-top: 100px;
+                padding-left: 100px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            li {
+                list-style-type: none;
+                display: inline;
+                padding: 0 20px;
+            }
+            li a {
+                text-decoration: none; /* removes underline */
+            }
+            li a:hover {
+                color: #333; /* mouse over */
+            }
+            li a:link {
+                color: #000; /* link color */
+            }
+            li a:visited {
+                color: #818db3; /* visited link color */
+            }
+            li a:active {
+                color: #753a30; /* active link color */
+            }
+            nav {
+                background-color:rgb(255, 245, 238);
+                height: 50px;
+                text-align: center;
+                padding-top: 2px;
+            }
+            main {
+                height: 400px; /* placeholder to show the page design */
+            }
+            main h1 {
+                color:rgb(129, 141, 179);
+                font-family: Arial;
+            }
+            footer {
+                height: 40px;
+                background-color:rgb(129, 141, 179);
+                text-align: center;
+                padding-top: 20px;
+                color:rgb(211, 218, 240);
+            }
+        </style>
+    </head>
+
     <body>
         <div id = "container">
-            <header>My Web site brand</header>
-            <!-- Begin Navigation--->
+            <header style="font-size: 60px; color: #fff">My Web Site Brand</header>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -17,8 +71,7 @@
             <!--End  Main Navigation  -->
             <main>
                 <h1>My First Heading</h1>
-                <p>My First Paragraph</p>
-                <img src="images/central_park.jpg" alt="Central Park" width = "500">
+                <p>My First Paragraph.</p>
             </main>
             <!--End Main content-->
         </div>
@@ -26,5 +79,5 @@
     </body>
     <!--Footer Information-->
     <footer>&copy; Copyright 2025</footer>
- </html>
+</html>
  
